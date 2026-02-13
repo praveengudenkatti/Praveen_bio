@@ -1,40 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-     <title>𓆩•𝐊𝐢𝐬𝐬𝐮💞•𓆪</title>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     <!-- <link rel="stylesheet" href="css/style.css"> -->
-     <link rel="shortcut icon" href="x.ico" type="image/x-icon">
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap');
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROFESSOR-PARI | Bio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+        body {
+            background-color: #000;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+            flex-direction: column;
+        }
 
-:root {
-    -webkit-tap-highlight-color: #0000;
-    -webkit-user-select: none; 
-    -ms-user-select: none; 
-    user-select: none;
-}
+        /* Darker Background Effect */
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://i.ibb.co/Pvn9TSQ5/He-carried-the-hatred-of-the-world-to-protect-the-one-he-loved-Itachi-Uchiha-Uchiha-Itach-5.jpg') no-repeat center center/cover;
+            filter: blur(8px) brightness(0.25);
+            transform: scale(1.1);
+            z-index: -1;
+        }
 
-body {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    overflow: hidden;
-}
+        .container {
+            width: 90%;
+            max-width: 450px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #ff4d4d;
+            margin-bottom: 15px;
+            object-fit: cover;
+            box-shadow: 0 0 20px #ff4d4d;
+            cursor: pointer; /* Indicates it can be clicked */
+            transition: transform 0.3s ease;
+        }
+
+        .profile-img:active {
+            transform: scale(0.95);
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+            color: #fff;
+        }
+
+        .founder-tag {
+            color: #ff4d4d;
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .roles {
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+            color: #bbb;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .info {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-bottom: 25px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn {
+            padding: 14px;
+            text-decoration: none;
+            color: white;
+            border-radius: 0px; 
+            font-weight: 600;
+            transition: 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border: 1px solid rgba(255,255,255,0.1);
+            text-transform: uppercase;
+            font-size: 0.85rem;
+        }
+
+        .btn:hover {
+            transform: scale(1.02);
+            filter: brightness(1.2);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+        }
+
+        .whatsapp { background: #25d366; }
+        .youtube { background: #ff0000; }
+        .telegram { background: #0088cc; }
+        .instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+        .contact { background: #ffffff; color: #000; }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 0.7rem;
+            color: rgba(255, 255, 255, 0.5);
+            text-align: center;
+            letter-spacing: 1px;
+        }
+
+        /* Full Screen Overlay Style */
+        #overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 999;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #overlay img {
+            max-width: 90%;
+            max-height: 90%;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background"></div>
+
+    <div class="container">
+        <img src="https://i.ibb.co/Pvn9TSQ5/He-carried-the-hatred-of-the-world-to-protect-the-one-he-loved-Itachi-Uchiha-Uchiha-Itach-5.jpg" alt="Profile" class="profile-img" onclick="openFullImage()">
+        
+        <h1>PROFESSOR-PARI</h1>
+        <span class="founder-tag">FOUNDER ༒༒ 𝗘𝗥𝗥𝗢𝗥 ༒༒ COMMUNITY</span>
+        
+        <div class="roles">DEVELOPER | MODDER | APP MAKER | WEB MAKER</div>
+
+        <p class="info">Age: 17+ | Tech Enthusiast</p>
+
+        <div class="links">
+            <a href="https://whatsapp.com/channel/0029VbBGjOwHLHQS9vUIIl27" class="btn whatsapp" target="_blank">WhatsApp Channel</a>
+            <a href="https://youtube.com/@hacking_pro_tips?si=MbRWo35nTHwKE7NY" class="btn youtube" target="_blank">YouTube Channel</a>
+            <a href="https://t.me/professor_7860" class="btn telegram" target="_blank">Telegram Group</a>
+            <a href="https://www.instagram.com/death_era_?igsh=OTFneG1iZmhoMjQ3" class="btn instagram" target="_blank">Instagram</a>
+            <a href="https://api.whatsapp.com/send?phone=+923237533251&text=HEY+PARI--+YOUR+BIO+WEB+IS+VERY+GOOD+" class="btn contact" target="_blank">Contact Founder</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        ©️ Powered by PROFESSOR DEATH SYSTEM
+    </div>
+
+    <div id="overlay" onclick="closeFullImage()">
+        <img src="https://i.ibb.co/Pvn9TSQ5/He-carried-the-hatred-of-the-world-to-protect-the-one-he-loved-Itachi-Uchiha-Uchiha-Itach-5.jpg" alt="Full View">
+    </div>
+
+    <script>
+        function openFullImage() {
+            document.getElementById("overlay").style.display = "flex";
+        }
+        function closeFullImage() {
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>}
 
 h1:hover {
     cursor: pointer;
