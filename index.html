@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝐏𝐑𝐀𝐕𝐄𝐄𝐍 𝐆𝐔𝐃𝐄𝐍𝐊𝐀𝐓𝐓𝐈 | Bio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #000;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+            flex-direction: column;
+        }
+
+        /* Darker Background Effect */
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://i.ibb.co/Pvn9TSQ5/He-carried-the-hatred-of-the-world-to-protect-the-one-he-loved-Itachi-Uchiha-Uchiha-Itach-5.jpg') no-repeat center center/cover;
+            filter: blur(8px) brightness(0.25);
+            transform: scale(1.1);
+            z-index: -1;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 450px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #ff4d4d;
+            margin-bottom: 15px;
+            object-fit: cover;
+            box-shadow: 0 0 20px #ff4d4d;
+            cursor: pointer; /* Indicates it can be clicked */
+            transition: transform 0.3s ease;
+        }
+
+        .profile-img:active {
+            transform: scale(0.95);
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+            color: #fff;
+        }
+
+        .founder-tag {
+            color: #ff4d4d;
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .roles {
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+            color: #bbb;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .info {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-bottom: 25px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn {
+            padding: 14px;
+            text-decoration: none;
+            color: white;
+            border-radius: 0px; 
+            font-weight: 600;
+            transition: 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border: 1px solid rgba(255,255,255,0.1);
+            text-transform: uppercase;
+            font-size: 0.85rem;
+        }
+
+        .btn:hover {
+            transform: scale(1.02);
+            filter: brightness(1.2);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+        }
+
+        .whatsapp { background: #25d366; }
+        .youtube { background: #ff0000; }
+        .telegram { background: #0088cc; }
+        .instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+        .contact { background: #ffffff; color: #000; }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 0.7rem;
+            color: rgba(255, 255, 255, 0.5);
+            text-align: center;
+            letter-spacing: 1px;
+        }
+
+        /* Full Screen Overlay Style */
+        #overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 999;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #overlay img {
+            max-width: 90%;
+            max-height: 90%;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background"></div>
+
+    <div class="container">
+        <img src="https://i.ibb.co/XkypfNJS/92ae38464e4c.jpg" alt="Profile" class="profile-img" onclick="openFullImage()">
+        
+        <h1>𝐏𝐑𝐀𝐕𝐄𝐄𝐍 𝐆𝐔𝐃𝐄𝐍𝐊𝐀𝐓𝐓𝐈</h1>
+        <span class="founder-tag">FOUNDER 𝙿𝚁𝙰𝚅𝙴𝙴𝙽 𝙱𝙼𝙸 COMMUNITY</span>
+        
+        <div class="roles">DEVELOPER | MODDER | APP MAKER | WEB MAKER</div>
+
+        <p class="info">Age: 22+ | Tech Enthusiast</p>
+
+        <div class="links">
+            <a href="https://whatsapp.com/channel/0029Vb6g2T1GpLHNq7KALI1d" class="btn whatsapp" target="_blank">WhatsApp Channel</a>
+            <a href="https://www.youtube.com/@Praveenbmi4p4" class="btn youtube" target="_blank">YouTube Channel</a>
+            <a href="https://t.me/praveengudenkatti" class="btn telegram" target="_blank">Telegram Group</a>
+            <a href="https://www.instagram.com/u_n_i_q_u_e_p_r_a_v_e_e_n_46?igsh=dGs0dXVqZXUzMGsx" class="btn instagram" target="_blank">Instagram</a>
+            <a href="https://whatsapp.com/channel/0029Vb6g2T1GpLHNq7KALI1d" class="btn contact" target="_blank">Contact Founder</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        © Powered by ᴘraveen ʙmi
+    </div>
+
+    <div id="overlay" onclick="closeFullImage()">
+        <img src="https://i.ibb.co/XkypfNJS/92ae38464e4c.jpg" alt="Full View">
+    </div>
+
+    <script>
+        function openFullImage() {
+            document.getElementById("overlay").style.display = "flex";
+        }
+        function closeFullImage() {
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
